@@ -3,7 +3,7 @@ entries:
   namespace-rbac:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-07-25T16:31:45.636095+07:00"
+    created: "2022-07-25T17:38:36.63083+07:00"
     description: Install service account and rbac for microservices with custom role
       definition
     digest: a70b63ebd6ee5e4b2d02c44d02de87ce4002f3a29c2f485fc1bb00e888524a77
@@ -25,7 +25,20 @@ entries:
   sample-deployment:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-25T16:31:45.637432+07:00"
+    created: "2022-07-25T17:38:36.633828+07:00"
+    description: A Helm chart for Kubernetes
+    digest: ffcb70e09a64de75ce6f6252cddd4f437d1240565df049ad8d41e55a60196d53
+    maintainers:
+    - email: jefri.adv@gmail.com
+      name: jefri
+    name: sample-deployment
+    type: application
+    urls:
+    - https://dventer.github.io/helm-chart/sample-deployment-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-25T17:38:36.633313+07:00"
     description: A Helm chart for Kubernetes
     digest: c79d27dcd515c46f2041869536af23da93093f3680bab9683a190f876d6b18e9
     maintainers:
@@ -38,7 +51,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-25T16:31:45.636657+07:00"
+    created: "2022-07-25T17:38:36.631597+07:00"
     description: A Helm chart for Kubernetes
     digest: fba6aa61bebf62af637ad1bb50c7b2e15781e65ea1693b436a97dd07580d86bb
     maintainers:
@@ -49,4 +62,4 @@ entries:
     urls:
     - https://dventer.github.io/helm-chart/sample-deployment-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-25T16:31:45.635215+07:00"
+generated: "2022-07-25T17:38:36.629036+07:00"
