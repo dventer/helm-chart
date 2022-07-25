@@ -13,7 +13,7 @@ If release name contains chart name it will be used as a full name.
 {{- else }}
 {{- $name := default .Values.project .Values.nameOverride }}
 {{- if contains $name .Release.Name }}
-{{- .Release.Name | trunc 63 | trimSuffix "-" }}
+{{- printf "%s-%s" .Release.Name .Values.environment | trunc 63 | trimSuffix "-" }}
 {{- else }}
 {{- printf "%s-%s-%s" .Release.Name $name .Values.environment | trunc 63 | trimSuffix "-" }}
 {{- end }}
