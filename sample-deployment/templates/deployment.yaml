@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     log.config.scalyr.com/attributes.project: {{ .Values.project }}
-    log.config.scalyr.com/attributes.project: {{ include "sample-app.fullname" . }}
+    log.config.scalyr.com/attributes.deployment: {{ include "sample-app.fullname" . }}
   name: {{ include "sample-app.fullname" . }}
   labels:
     {{- include "sample-app.labels" . | nindent 4 }}
